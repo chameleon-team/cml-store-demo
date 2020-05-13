@@ -1,0 +1,21 @@
+{
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Chameleon",
+        "navigationBarTextStyle": "black"
+    },
+    "subPackages": [
+        {
+            "root": "pages/child",
+            "name": "child",
+            "pages": [
+                "child"
+            ]
+        }
+    ],
+    "pages": [
+        "pages/index/index"
+    ],
+    "usingComponents": {}
+}

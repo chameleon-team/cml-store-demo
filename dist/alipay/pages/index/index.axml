@@ -1,0 +1,5 @@
+<view class=" cml-base cml-view cml-027988ab">
+  <view class=" cml-base cml-view cml-027988ab">maintext: {{maintext}}</view>
+  <view class=" cml-base cml-view cml-027988ab">childtext: {{childtext}}</view>
+  <view onTap="_cmlEventProxy" data-eventtap="{{['tap']}}" class=" cml-base cml-view cml-027988ab">点击文字，更新childtext值为childtext</view>
+</view>

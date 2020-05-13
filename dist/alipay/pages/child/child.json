@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "demo-com": "./../../components/demo-com/demo-com"
+    },
+    "defaultTitle": "子包",
+    "pullRefresh": false,
+    "allowsBounceVertical": "YES",
+    "titleBarColor": "#ffffff"
+}

@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "demo-com": "./../../components/demo-com/demo-com"
+    },
+    "navigationBarTitleText": "子包",
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#E2E2E2"
+}

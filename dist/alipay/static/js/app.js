@@ -1,5 +1,5 @@
 var __CML__GLOBAL = require("./manifest.js");
-__CML__GLOBAL.webpackJsonp([1],{
+__CML__GLOBAL.webpackJsonp([5],{
 
 /***/ "../../../.nvm/versions/node/v10.7.0/lib/node_modules/chameleon-tool/node_modules/babel-loader/lib/index.js?{\"filename\":\"/Users/didi/.nvm/versions/node/v10.7.0/lib/node_modules/chameleon-tool/chameleon.js\"}!../../../.nvm/versions/node/v10.7.0/lib/node_modules/chameleon-tool/node_modules/chameleon-loader/src/selector.js?type=script&index=0&fileType=app&media=dev&cmlType=alipay&isInjectBaseStyle=true&check={\"enable\":true,\"enableTypes\":[]}!./src/app/app.cml":
 /***/ (function(module, exports, __webpack_require__) {
@@ -73,7 +73,7 @@ var __cml__script = __webpack_require__("../../../.nvm/versions/node/v10.7.0/lib
 /***/ "./src/router.config.json":
 /***/ (function(module, exports) {
 
-module.exports = {"mode":"history","domain":"https://www.chameleon.com","routes":[{"url":"/cml/h5/index","path":"/pages/index/index","name":"主包","mock":"index.php"},{"url":"/cml/h5/child","path":"/pages/child/child","name":"子包","mock":"child.php"}]}
+module.exports = {"mode":"history","domain":"https://www.chameleon.com","routes":[{"url":"/cml/h5/index","path":"/main/pages/index/index","name":"主包","mock":"index.php"},{"url":"/cml/h5/child1","path":"/child1/pages/child/child","name":"子包1","mock":"child.php"},{"url":"/cml/h5/child2","path":"/child2/pages/child/child","name":"子包2","mock":"child.php"}]}
 
 /***/ })
 

@@ -29,9 +29,9 @@ if(AFAppX.registerApp) {
 
 function success() {
 require('../../app');
-require('../../components/demo-com/demo-com?hash=ec7c5687c7f2ffa836caf3a93e877914426baff6');
-require('../../pages/index/index?hash=ec4364bf24d524e0524ef8ddaae53ac309871421');
-require('../../pages/child/child?hash=ec4364bf24d524e0524ef8ddaae53ac309871421');
+require('../../main/pages/index/index?hash=32d7d2807ed4e666ef03b4b3fe8c38ecf2e34e68');
+require('../../child1/pages/child/child?hash=32d7d2807ed4e666ef03b4b3fe8c38ecf2e34e68');
+require('../../child2/pages/child/child?hash=32d7d2807ed4e666ef03b4b3fe8c38ecf2e34e68');
 }
 self.bootstrapApp ? self.bootstrapApp({ success }) : success();
 }

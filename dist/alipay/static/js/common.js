@@ -2261,6 +2261,106 @@ function getSystemInfo() {
 
 /***/ }),
 
+/***/ "./node_modules/chameleon-api/src/interfaces/navigateTo/index.interface":
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _utils = __webpack_require__("./node_modules/chameleon-api/src/lib/utils.js");
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var __INTERFACE__FILEPATH = "/Users/didi/Desktop/didi/cml-store-demo/node_modules/chameleon-api/src/interfaces/navigateTo/index.interface";
+var __CML_ERROR__ = function throwError(content) {
+  throw new Error("\u6587\u4EF6\u4F4D\u7F6E: " + __INTERFACE__FILEPATH + "\n            " + content);
+};
+
+var __enableTypes__ = "";
+var __CHECK__DEFINES__ = {
+  "types": {
+    "options": {
+      "path": "String",
+      "query": "CMLObject",
+      "url": "String"
+    }
+  },
+  "interfaces": {
+    "UtilsInterface": {
+      "navigateTo": {
+        "input": ["options"],
+        "output": "Undefined"
+      }
+    }
+  },
+  "classes": {
+    "Method": ["UtilsInterface"]
+  }
+};
+var __OBJECT__WRAPPER__ = __webpack_require__("../../../.nvm/versions/node/v10.7.0/lib/node_modules/chameleon-tool/node_modules/interface-loader/node_modules/mvvm-interface-parser/runtime/checkWrapper.js");
+
+var Method = function () {
+  function Method() {
+    _classCallCheck(this, Method);
+  }
+
+  _createClass(Method, [{
+    key: "navigateTo",
+    value: function navigateTo(opt) {
+      var path = opt.path,
+          query = opt.query;
+
+      path = (0, _utils.buildQueryStringUrl)(query, path);
+      my.navigateTo({
+        url: path
+      });
+    }
+  }]);
+
+  return Method;
+}();
+
+exports.default = __OBJECT__WRAPPER__(new Method(), __CML_ERROR__, __enableTypes__, __CHECK__DEFINES__);
+
+
+var copyProtoProperty = __webpack_require__("../../../.nvm/versions/node/v10.7.0/lib/node_modules/chameleon-tool/node_modules/interface-loader/node_modules/mvvm-interface-parser/runtime/copyProto.js");
+copyProtoProperty(exports.default);
+
+/***/ }),
+
+/***/ "./node_modules/chameleon-api/src/interfaces/navigateTo/index.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = navigateTo;
+
+var _index = __webpack_require__("./node_modules/chameleon-api/src/interfaces/navigateTo/index.interface");
+
+var _index2 = _interopRequireDefault(_index);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function navigateTo(opt) {
+  // 转换为字符串通过多态不支持object，需改
+  var query = opt.query || {};
+  var path = opt.path || '';
+  var url = opt.url || '';
+
+  // 不能通过直接转换类型对opt.query重新赋值的操作, 否则会造成opt原始传入对象数据被篡改的问题
+  _index2.default.navigateTo({
+    path: path,
+    url: url,
+    query: query
+  });
+}
+
+/***/ }),
+
 /***/ "./node_modules/chameleon-api/src/interfaces/px2cpx/getWidth.interface":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2484,7 +2584,7 @@ function addApiPrefix(url, domainkey) {
   } else {
     // 老版本配置apiPrefix
     if (true) {
-      return "http://192.168.31.240:8000" + url;
+      return "http://172.24.38.105:8000" + url;
     }
   }
 }
@@ -10335,13 +10435,6 @@ exports._isComputingDerivation = isComputingDerivation;
 exports.onReactionError = onReactionError;
 exports._interceptReads = interceptReads;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("../../../.nvm/versions/node/v10.7.0/lib/node_modules/chameleon-tool/node_modules/process/browser.js"), __webpack_require__("../../../.nvm/versions/node/v10.7.0/lib/node_modules/chameleon-tool/node_modules/webpack/buildin/global.js")))
-
-/***/ }),
-
-/***/ "./src/assets/images/chameleon.png":
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/img/chameleon_83ee00e.png";
 
 /***/ }),
 

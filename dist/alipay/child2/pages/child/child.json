@@ -1,0 +1,7 @@
+{
+    "defaultTitle": "子包2",
+    "pullRefresh": false,
+    "allowsBounceVertical": "YES",
+    "titleBarColor": "#ffffff",
+    "usingComponents": {}
+}

@@ -33,10 +33,17 @@ export default new App();
     },
     "subPackages": [
       {
-        "root": "pages/child",
-        "name": "child",
+        "root": "child1",
+        "name": "child1",
         "pages": [
-          "child"
+          "pages/child/child"
+        ]
+      },
+      {
+        "root": "child2",
+        "name": "child2",
+        "pages": [
+          "pages/child/child"
         ]
       }
     ]
@@ -49,14 +56,21 @@ export default new App();
         "navigationBarTextStyle":"black"
       },
       "subPackages": [
-        {
-          "root": "pages/child",
-          "name": "child",
-          "pages": [
-            "child"
-          ]
-        }
-      ]
+      {
+        "root": "child1",
+        "name": "child1",
+        "pages": [
+          "pages/child/child"
+        ]
+      },
+      {
+        "root": "child2",
+        "name": "child2",
+        "pages": [
+          "pages/child/child"
+        ]
+      }
+    ]
   }
 }
 </script>

@@ -1,22 +1,28 @@
 {
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Chameleon",
-    "navigationBarTextStyle": "black"
-  },
-  "subPackages": [
-    {
-      "root": "pages/child",
-      "name": "child",
-      "pages": [
-        "child"
-      ]
-    }
-  ],
-  "pages": [
-    "pages/index/index"
-  ],
-  "usingComponents": {},
-  "sitemapLocation": "sitemap.json"
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Chameleon",
+        "navigationBarTextStyle": "black"
+    },
+    "subPackages": [
+        {
+            "root": "child1",
+            "name": "child1",
+            "pages": [
+                "pages/child/child"
+            ]
+        },
+        {
+            "root": "child2",
+            "name": "child2",
+            "pages": [
+                "pages/child/child"
+            ]
+        }
+    ],
+    "pages": [
+        "main/pages/index/index"
+    ],
+    "usingComponents": {}
 }
